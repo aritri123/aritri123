@@ -1,0 +1,33 @@
+ public static void kaprekarNumbers(int p, int q) {
+
+    int n;
+    int d;
+    int sq;
+    int count;
+    int r;
+    int k;
+    int flag=0;
+    int x;
+    int y;
+    
+    for(k=p;k<=q;k++)
+    {
+        n=k;
+        sq=n*n;
+        count=0;
+        while(n>0)
+        {
+            r=n%10;
+            n=n/10;
+            count++;
+            
+        }
+        
+        d=(int)Math.pow(10,count);
+        x=sq%d;
+        y=sq/d;
+        if((x+y)==k)
+        {
+            System.out.print(k+" ");
+}}}}
+

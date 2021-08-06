@@ -1,0 +1,34 @@
+void countApplesAndOranges(int s, int t, int a, int b, int apples_count, int* apples, int oranges_count, int* oranges) 
+{
+    int i;
+    int j;
+    int app=0;
+    int org=0;
+    int m=a;
+    int n=b;
+    for(i=0;i<apples_count;i++)
+    {
+      m= m+apples[i];
+      if(m>=s&& m<=t)
+      {
+      app++;
+      }
+      m=a;
+    }
+    for(j=0;j<oranges_count;j++)
+    {
+        
+    
+   n= n+oranges[j];
+   if(n>=s && n<=t)
+   {
+   org++;
+    }
+    n=b;
+    }
+    
+  printf("%d",app);
+  printf("\n%d",org) ; 
+
+}
+    

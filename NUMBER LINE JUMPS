@@ -1,0 +1,25 @@
+public static String kangaroo(int x1, int v1, int x2, int v2) {
+        
+    // Write your code here
+int i;
+int j;
+int f=0;
+for(i=x1;i<=1000;i=i+v1)
+  {
+      for (j=x2;j<=1000;j=j+v2)
+      {
+          if(i==j)
+          {
+          f=1;
+          break;
+      }
+      }
+      }
+      if(f==0 || ((v2>v1)&&(x2>x1)))
+      return("NO");
+      else
+      return("YES");
+    }
+}
+      
+

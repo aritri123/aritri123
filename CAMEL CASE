@@ -1,0 +1,19 @@
+class Result {
+
+    
+
+    public static int camelcase(String s) {
+    
+char ch;
+int i;
+int count=0;
+int len=s.length();
+for(i=0;i<len;i++)
+{
+    ch=s.charAt(i);
+    if(Character.isUpperCase(ch))
+    count++;
+}
+return(count+1);
+    }}
+

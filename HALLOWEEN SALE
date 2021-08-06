@@ -1,0 +1,20 @@
+int howManyGames(int p, int d, int m, int s) {
+  int i;
+  int sum=0;
+  int count=0;
+  int diff=0;
+  for(i=p;i>m;i-=d)
+  {
+      if(sum<s)
+      {
+          sum=sum+i;
+          count++;
+          
+      }
+  }
+  
+  diff=(s-sum);
+  count=count+(diff/m);
+  
+return (count);
+}

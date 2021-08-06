@@ -1,0 +1,13 @@
+int chocolateFeast(int n, int c, int m) {
+    
+    int wrap=n/c;
+    int bars= n/c ;
+   while(wrap>=m)
+        {
+            bars=bars+(wrap/m);
+            wrap=(wrap%m)+ (wrap/m);
+        }
+    
+    return bars;
+
+}

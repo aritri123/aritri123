@@ -1,0 +1,14 @@
+int* gradingStudents(int grades_count, int* grades, int* result_count) {
+    int i;
+
+ 
+    for(i=0;i<grades_count;i++)
+    {
+        if(grades[i]<38||grades[i]%5<=2)
+        result_count[i]=grades[i];
+        else if(grades[i]%5>2)
+        result_count[i]=grades[i]+(5-(grades[i]%5));
+    }
+    
+return result_count;
+}

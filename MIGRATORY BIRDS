@@ -1,0 +1,27 @@
+int migratoryBirds(int arr_count, int* arr) {
+    int i;
+    int k;
+    int max=0;
+    int cnt;
+    int p;
+    for(k=1;k<=5;k++)
+    {
+        
+        for(i=0;i<arr_count;i++)
+    {
+      if(arr[i]==k)
+      {
+          cnt++;
+      }  
+
+}
+if(cnt>max)
+{
+    max=cnt;
+    p=k;
+}
+cnt=0;
+    }
+    return p;
+}
+

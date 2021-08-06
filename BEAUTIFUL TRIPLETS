@@ -1,0 +1,19 @@
+int beautifulTriplets(int d, int arr_count, int* arr) 
+{
+    int i;
+    int a;
+    int b;
+    int count;
+    for(i=0;i<arr_count;i++)
+    {
+      a=arr[i]+d;
+      b=arr[i]+(d*2);
+      if((a==arr[i+2] && b== arr[i+4]) || (a==arr[i+1] && b==arr[i+2]))
+      count++;
+      else {
+      count=count+0;
+      }
+    }
+   
+    return count;
+}

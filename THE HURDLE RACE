@@ -1,0 +1,21 @@
+int hurdleRace(int k, int height_count, int* height) 
+{
+    int i;
+    int max=0;
+    int diff;
+    
+    for(i=0;i<height_count;i++)
+    {
+        if(height[i]>max)
+        {
+        
+          max=height[i];
+          
+        }
+    }
+    diff=(max-k);
+    if(max>k)
+    return diff;
+    else {
+    return 0;
+    }}
